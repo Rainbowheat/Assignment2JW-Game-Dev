@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
     public float speed;
     public float jumpForce;
+    public float sprint;
     public bool onGround;
     public Rigidbody myBody;
     public Collider myCollider;
@@ -25,6 +26,9 @@ public class Movement : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical") * Time.deltaTime * speed;
 
         transform.Translate(horizontalInput, 0, verticalInput);
+
+        if (Input.GetKeyDown(KeyCode.LeftShift)) { speed = speed + sprint; }
+        if (Input.GetKeyUp(KeyCode.LeftShift)) { speed = speed - sprint; }
         if (Input.GetKeyDown(KeyCode.Space) && onGround)
         {
             myBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);

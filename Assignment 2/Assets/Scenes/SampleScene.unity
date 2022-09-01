@@ -552,6 +552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpForce: 20
+  sprint: 10
   onGround: 1
   myBody: {fileID: 1312455147}
   myCollider: {fileID: 1312455148}
