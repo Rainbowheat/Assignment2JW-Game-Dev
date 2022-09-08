@@ -8,6 +8,7 @@ public class MovementScript : MonoBehaviour
     public float sprint;
     public float jumpForce;
     public float sens;
+    public int jumps;
 
     public float onGround;
     public float horizontalMovement;
@@ -41,7 +42,7 @@ public class MovementScript : MonoBehaviour
         Debug.Log("WHA");
         if (other.tag == "Floor")
         {
-            onGround = 2;
+            onGround = jumps;
         }
     }
 }

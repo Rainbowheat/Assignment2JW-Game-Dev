@@ -159,8 +159,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   sprint: 3
-  jumpForce: 5
+  jumpForce: 10
   sens: 0
+  jumps: 5
   onGround: 0
   horizontalMovement: 0
   verticalMovement: 0
