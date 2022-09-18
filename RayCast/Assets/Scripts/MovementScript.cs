@@ -7,7 +7,6 @@ public class MovementScript : MonoBehaviour
     public float speed;
     public float sprint;
     public float jumpForce;
-    public float sens;
     public int jump;
 
     public float onGround;
